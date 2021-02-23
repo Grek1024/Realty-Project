@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765724174652",
+    "project_id": "mapreality",
+    "storage_bucket": "mapreality.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765724174652:android:a4412fcb9cf32fc9785639",
+        "android_client_info": {
+          "package_name": "com.example.app_r_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765724174652-ortfhlntnku9l2vvt2002hrennguekoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdy8Eb54NaDrs4Jlxv9jvIjVxjF1AMZkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765724174652-ortfhlntnku9l2vvt2002hrennguekoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

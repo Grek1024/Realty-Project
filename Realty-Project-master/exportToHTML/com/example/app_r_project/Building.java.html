@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Building.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #808080; font-style: italic;}
+.s3 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Building.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.app_r_project;
+
+
+<span class="s0">import </span>androidx.room.ColumnInfo;
+<span class="s0">import </span>androidx.room.Entity;
+<span class="s0">import </span>androidx.room.PrimaryKey;
+
+<span class="s0">import </span>java.sql.Date;
+
+
+@Entity
+<span class="s0">public class </span>Building {
+<span class="s2">//PK</span>
+    @PrimaryKey(autoGenerate = <span class="s0">true</span>)
+    <span class="s0">public int </span>id;
+
+<span class="s2">//адреса</span>
+    @ColumnInfo(name = <span class="s3">&quot;address&quot;</span>)
+    <span class="s0">public </span>String address;
+
+<span class="s2">//призначення</span>
+    @ColumnInfo(name = <span class="s3">&quot;appointmant&quot;</span>)
+    <span class="s0">public </span>String appointmant;
+
+<span class="s2">//площа</span>
+    @ColumnInfo(name = <span class="s3">&quot;area&quot;</span>)
+    <span class="s0">public double </span>area;
+
+<span class="s2">//балансова вартість</span>
+@ColumnInfo(name = <span class="s3">&quot;price&quot;</span>)
+<span class="s0">public double </span>price;
+
+<span class="s2">//рік побудови</span>
+@ColumnInfo(name = <span class="s3">&quot;year_of_construction&quot;</span>)
+<span class="s0">public int </span>year_construction;
+
+<span class="s2">//реєстраційний документ</span>
+@ColumnInfo(name = <span class="s3">&quot;registration_document&quot;</span>)
+<span class="s0">public </span>String registration_doс_link;
+
+<span class="s2">//дата введення в експлуатацію</span>
+@ColumnInfo(name = <span class="s3">&quot;date_of_commissioning&quot;</span>)
+<span class="s0">public </span>String date_commissioning;
+
+<span class="s2">//стан будівлі</span>
+@ColumnInfo(name = <span class="s3">&quot;condition&quot;</span>)
+<span class="s0">public </span>String condition;
+
+<span class="s2">//Наявність проектно-кошторисної документації</span>
+@ColumnInfo(name = <span class="s3">&quot;design_and_estimate_documentation&quot;</span>)
+<span class="s0">public </span>String estimate_documentation;
+
+<span class="s2">// Наявність місця для парковки</span>
+@ColumnInfo(name = <span class="s3">&quot;parking place&quot;</span>)
+<span class="s0">public </span>String parking_place;
+
+<span class="s2">//доступність для людей з обмеженнями</span>
+@ColumnInfo(name = <span class="s3">&quot;accessibility&quot;</span>)
+<span class="s0">public </span>String accessibility;
+
+<span class="s2">//Сфера підпорядкування</span>
+@ColumnInfo(name = <span class="s3">&quot;sphere_of_subordination&quot;</span>)
+<span class="s0">public </span>String subordination;
+
+<span class="s2">//Кількість поверхів</span>
+@ColumnInfo(name = <span class="s3">&quot;number_of_floors&quot;</span>)
+<span class="s0">public int </span>floors;
+
+
+
+
+
+
+}
+</pre>
+</body>
+</html>
