@@ -75,30 +75,30 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         building4.coordinates_long=25.054205999968126;
         //5
         Building building5= new Building();
-        building4.address="вулиця Івана Богуна, 40, Коломия, Івано-Франківська область, 78200";
-        building4.appointmant="Медичний Центр";
-        building4.coordinates_lat=48.526940965658;
-        building4.coordinates_long=25.05931408842597;
+        building5.address="вулиця Івана Богуна, 40, Коломия, Івано-Франківська область, 78200";
+        building5.appointmant="Медичний Центр";
+        building5.coordinates_lat=48.526940965658;
+        building5.coordinates_long=25.05931408842597;
         //6
         Building building6= new Building();
-        building4.address="вулиця Івана Франка, 31, Коломия, Івано-Франківська область, 78200";
-        building4.appointmant="Онкологічний диспансер";
-        building4.coordinates_lat=48.53374654205958;
-        building4.coordinates_long=25.032757044210772;
+        building6.address="вулиця Івана Франка, 31, Коломия, Івано-Франківська область, 78200";
+        building6.appointmant="Онкологічний диспансер";
+        building6.coordinates_lat=48.53374654205958;
+        building6.coordinates_long=25.032757044210772;
 
         //7
         Building building7= new Building();
-        building4.address="проспект В'ячеслава Чорновола, 43Б, Коломия, Івано-Франківська область, 78200";
-        building4.appointmant="Музей Писанки";
-        building4.coordinates_lat=48.5283264535765;
-        building4.coordinates_long=25.039151683433275;
+        building7.address="проспект В'ячеслава Чорновола, 43Б, Коломия, Івано-Франківська область, 78200";
+        building7.appointmant="Музей Писанки";
+        building7.coordinates_lat=48.5283264535765;
+        building7.coordinates_long=25.039151683433275;
 
         //8
         Building building8= new Building();
-        building4.address=" вулиця Театральна, 25, Коломия, Івано-Франківська область, 78200";
-        building4.appointmant="Національний музей народного мистецтва Гуцульщини та Покуття";
-        building4.coordinates_lat=48.52880118840377;
-        building4.coordinates_long=25.037711085075955;
+        building8.address=" вулиця Театральна, 25, Коломия, Івано-Франківська область, 78200";
+        building8.appointmant="Національний музей народного мистецтва Гуцульщини та Покуття";
+        building8.coordinates_lat=48.52880118840377;
+        building8.coordinates_long=25.037711085075955;
 
 
         new InsertAsyncTask().execute(building1);
