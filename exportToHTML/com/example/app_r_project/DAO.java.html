@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>DAO.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+DAO.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.app_r_project;
+
+<span class="s0">import </span>androidx.room.Dao;
+<span class="s0">import </span>androidx.room.Delete;
+<span class="s0">import </span>androidx.room.Insert;
+<span class="s0">import </span>androidx.room.Query;
+
+<span class="s0">import </span>java.util.List;
+
+@Dao
+<span class="s0">public interface </span>DAO {
+
+    @Query(<span class="s2">&quot;SELECT * FROM Building&quot;</span>)
+    List&lt;Building&gt; getAllBuildings();
+    
+    @Insert
+<span class="s0">public void </span>add(Building building);
+    @Insert
+    <span class="s0">void </span>insertAll(Building... buildings);
+
+    @Delete
+    <span class="s0">void </span>delete(Building building);
+}
+</pre>
+</body>
+</html>
