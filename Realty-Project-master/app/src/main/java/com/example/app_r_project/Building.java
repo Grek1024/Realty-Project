@@ -16,11 +16,12 @@ import java.sql.Date;
 
         }
 
-        public Building(String typeBuild, String appointment, Double coordinateFirst, Double coordinateTwo){
+        public Building(String appointment, String name, Double coordinateFirst, Double coordinateTwo){
         this.appointment = appointment;
         this.coordinate = coordinateFirst;
         this.coordinateTwo = coordinateTwo;
-        this.typeBuild = typeBuild;
+        this.appointment = appointment;
+        this.name = name;
         }
 
         //PK
@@ -82,12 +83,19 @@ import java.sql.Date;
         @ColumnInfo(name = "place_coordinates")
         private Double coordinate;
 
-
         @ColumnInfo(name = "place_coordinates_Two")
         private Double coordinateTwo;
 
-        @ColumnInfo(name = "type_building")
-        private String typeBuild;
+        @ColumnInfo(name = "build_name")
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
 
         public int getId() {
             return id;
@@ -96,15 +104,6 @@ import java.sql.Date;
         public void setId(int id) {
             this.id = id;
         }
-
-        public String getTypeBuild() {
-            return typeBuild;
-        }
-
-        public void setTypeBuild(String typeBuild) {
-            this.typeBuild = typeBuild;
-        }
-
 
         public String getAddress() {
             return address;

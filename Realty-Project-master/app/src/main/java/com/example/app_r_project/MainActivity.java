@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -47,8 +48,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void onMapReady(GoogleMap googleMap) {
         for(Building b: database.Dao().getAll()){
+            String snippet = "Адреса: "+b.getAddress()+"\n"+"Реєстраційне посилання: "+b.getRegistration_doс_link();
             googleMap.addMarker(new MarkerOptions().position(new LatLng(b.getCoordinate(),b.getCoordinateTwo()))
-                    .title(b.getAppointment()).icon(QueryToDatabase.selectImage(b.getTypeBuild())));
+                    .title(b.getAppointment()).icon(QueryToDatabase.selectImage(b.getAppointment())).snippet(snippet)
+            );
         }
 
     }
@@ -65,6 +68,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public RoomDB getDatabase() {
         return database;
+    }
+
+    public void onClickTest(View view){
+
     }
 
 }
